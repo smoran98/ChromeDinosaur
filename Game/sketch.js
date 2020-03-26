@@ -15,6 +15,11 @@ function preload() {
     bImg = loadImage('background.png');
 }
 
+//got rid of probability
+function mousePressed() {
+  ballers.push(new Baller)
+}
+
 function setup() {
   createCanvas(800, 450);
   dinosaur = new dino();
