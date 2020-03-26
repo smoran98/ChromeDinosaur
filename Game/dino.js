@@ -1,6 +1,6 @@
 class dino {
   constructor() {
-    this.r = 150;
+    this.r = 100; //dino size reduced
     this.x = 50;
     this.y = height - 50;
     this.vy = 0;
