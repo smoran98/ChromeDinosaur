@@ -1,4 +1,4 @@
-class Ballers {
+class baller {
   constructor() {
     this.r = 100;
     this.x = width;

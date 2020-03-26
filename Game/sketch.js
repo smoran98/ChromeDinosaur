@@ -1,21 +1,29 @@
 let dinosaur
+let dImag
 let tImag
 let bImag
-let trains = [];
+let ballers = [];
 
 function preload() {
-    uImg = loadImage('dinosaur.png');
+    dImg = loadImage('dinosaur.png');
     tImg = loadImage('baller.png');
     bImg = loadImage('background.png');
 }
 
 function setup() {
   createCanvas(800, 450);
-  unicorn = new Unicorn();
+  dinosaur = new dino();
+}
+
+function keyPressed() {
+  if (key == ' '){
+    dinosaur.jump();
+  }
 }
 
 function draw() {
-  background(220);
-  unicorn.show();
+  background(bImg);
+  dinosaur.show();
+  dinosaur.move();
   
 }
