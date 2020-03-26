@@ -20,4 +20,13 @@ Gesture Based URI Development Project 2020
 
 ## Innovation and cross fertilization of ideas
 
+
+
+## References
+https://learn.ml5js.org/docs/#/
+
+https://www.jsdelivr.com/
+
+https://www.isca-speech.org/archive/interspeech_2015/papers/i15_1478.pdf
+
 ## Video
