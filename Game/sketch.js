@@ -22,8 +22,21 @@ function keyPressed() {
 }
 
 function draw() {
+  //lower probability of ballers
+  if (random(1) < 0.005) {
+     ballers.push(new baller());
+  }
   background(bImg);
+    for (let b of ballers) {
+    b.move();
+    b.show();
+    if (dino.hits(t)) {
+      console.log('GAME OVER');
+      noLoop();
+    }
+  }
   dinosaur.show();
   dinosaur.move();
   
+
 }

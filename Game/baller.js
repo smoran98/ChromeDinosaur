@@ -6,7 +6,7 @@ class baller {
   }
 
   move() {
-    this.x -= 3;
+    this.x -= 13;//baller speed
   }
 
   show() {

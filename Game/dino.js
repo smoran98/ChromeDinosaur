@@ -8,7 +8,14 @@ class dino {
   }
 
   jump(){
-    this.vy = -22;
+    if (this.y == height - this.r){
+      this.vy = -32; //adjust jump
+    }
+   
+  }
+
+  hit(baller) {
+    return collideCircleCircle(this.x, this.y, this.r, this.r, ,baller.x, baller.y, baller.r, baller.r);
   }
   
   move(){
