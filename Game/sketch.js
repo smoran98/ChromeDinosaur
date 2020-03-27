@@ -1,40 +1,38 @@
-let dinosaur;
-let dImag;
-let tImag;
-let bImag;
+let dinosaur
+let dImag
+let tImag
+let bImag
 let ballers = [];
-let soundClass;
+let soundClassifier;
 
 function preload() {
     const options = {
       probabilityThreshold: 0.95
     };
-    soundClass = ml5.soundClass('SpeechCommands18w', options);
+    soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
     dImg = loadImage('dinosaur.png');
-    tImg = loadImage('baller.png');
-    bImg = loadImage('background.png');
+    tImg = loadImage('baller.jpg');
+    bImg = loadImage('background.jpg');
 }
 
-//got rid of probability
 function mousePressed() {
-  ballers.push(new Baller)
+  ballers.push(new baller());
 }
 
 function setup() {
   createCanvas(800, 450);
   dinosaur = new dino();
-  soundClass.classify(gotCommand);
+  soundClassifier.classify(gotCommand);
 }
 
 function gotCommand(error, results) {
   if (error) {
     console.error(error);
   }
-  console.log[0](results[0].label, results[0].confidence);
+  console.log(results[0].label, results[0].confidence);
   if (results[0].label == 'up') {
-    dino.jump();
+    dinosaur.jump();
   }
-
 }
 
 function keyPressed() {
@@ -44,21 +42,21 @@ function keyPressed() {
 }
 
 function draw() {
-  //lower probability of ballers
   if (random(1) < 0.005) {
-     ballers.push(new baller());
+    ballers.push(new baller());
   }
   background(bImg);
-    for (let b of ballers) {
+  for (let b of ballers) {
     b.move();
     b.show();
-    if (dino.hits(t)) {
-      console.log('GAME OVER');
+    if (dinosaur.hits(b)) {
+      console.log('game over');
       noLoop();
     }
   }
+  
+  background(bImg);
   dinosaur.show();
   dinosaur.move();
   
-
 }
