@@ -1,27 +1,34 @@
-let dinosaur
-let dImag
-let tImag
-let bImag
-let ballers = [];
+// Daniel Shiffman
+// https://thecodingtrain.com/CodingChallenges/147-chrome-dinosaur.html
+// https://youtu.be/l0HoJHc-63Q
+
+// Google Chrome Dinosaur Game (Unicorn, run!)
+// https://editor.p5js.org/codingtrain/sketches/v3thq2uhk
+
+let unicorn;
+let uImg;
+let tImg;
+let bImg;
+let trains = [];
 let soundClassifier;
 
 function preload() {
-    const options = {
-      probabilityThreshold: 0.95
-    };
-    soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
-    dImg = loadImage('dinosaur.png');
-    tImg = loadImage('baller.jpg');
-    bImg = loadImage('background.jpg');
+  const options = {
+    probabilityThreshold: 0.95
+  };
+  soundClassifier = ml5.soundClassifier('SpeechCommands18w', options);
+  uImg = loadImage('unicorn.png');
+  tImg = loadImage('train.png');
+  bImg = loadImage('background.jpg');
 }
 
 function mousePressed() {
-  ballers.push(new baller());
+  trains.push(new Train());
 }
 
 function setup() {
   createCanvas(800, 450);
-  dinosaur = new dino();
+  unicorn = new Unicorn();
   soundClassifier.classify(gotCommand);
 }
 
@@ -31,32 +38,32 @@ function gotCommand(error, results) {
   }
   console.log(results[0].label, results[0].confidence);
   if (results[0].label == 'up') {
-    dinosaur.jump();
+    unicorn.jump();
   }
 }
 
 function keyPressed() {
-  if (key == ' '){
-    dinosaur.jump();
+  if (key == ' ') {
+    unicorn.jump();
   }
 }
 
 function draw() {
+  
   if (random(1) < 0.005) {
-    ballers.push(new baller());
+    trains.push(new Train());
   }
+  
   background(bImg);
-  for (let b of ballers) {
-    b.move();
-    b.show();
-    if (dinosaur.hits(b)) {
+  for (let t of trains) {
+    t.move();
+    t.show();
+    if (unicorn.hits(t)) {
       console.log('game over');
       noLoop();
     }
   }
-  
-  background(bImg);
-  dinosaur.show();
-  dinosaur.move();
-  
+
+  unicorn.show();
+  unicorn.move();
 }
