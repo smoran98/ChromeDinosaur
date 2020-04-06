@@ -37,7 +37,11 @@ Gestures
 ![Speech](https://i.imgur.com/7HF0B8S.png)
 
 ```
-Windows Speech Recognition is a speech recognition component developed by Microsoft for Windows Vista that enables voice commands to control the desktop user interface; dictate text in electronic documents and email; navigate websites; perform keyboard shortcuts; and to operate the mouse cursor.
+Windows Speech Recognition is a speech recognition component 
+developed by Microsoft for Windows Vista that enables voice 
+commands to control the desktop user interface; dictate text 
+in electronic documents and email; navigate websites; perform 
+keyboard shortcuts; and to operate the mouse cursor.
 ```
 
 
