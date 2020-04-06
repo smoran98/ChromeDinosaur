@@ -73,7 +73,7 @@ My recommendations would be that during the research process, the main focus sho
 
 ## Video and How to Run
 
-![Video](link)
+![Video](https://www.youtube.com/watch?v=zxrk6viDnKA)
 
 
 #### What's Needed?
