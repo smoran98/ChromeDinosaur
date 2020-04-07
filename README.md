@@ -1,5 +1,6 @@
 # ChromeDinosaur
-Gesture Based URI Development Project 2020
+### Gesture Based URI Development Project 2020
+https://github.com/smoran98/ChromeDinosaur
 
 ## Details
 
