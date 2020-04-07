@@ -2,6 +2,7 @@
 ### Gesture Based URI Development Project 2020
 https://github.com/smoran98/ChromeDinosaur
 
+
 ## Details
 
 | Project Details   |     |
@@ -14,11 +15,13 @@ https://github.com/smoran98/ChromeDinosaur
 | **Project Title** | Speech Recognition Game |
 
 
+
 ## Purpose of the application
 The design of the application came from an often-overlooked Easter Egg in Google Chrome is the dinosaur game, which appears when you try to visit a website while disconnected from the Internet. The game can be play online at https://elgoog.im/t-rex/ . But, to celebrate its brilliant simplicity, i am going to add speech recognition to control the player.
 
-## Architecture
+## Architecture [9]
 ![Preview](https://i.imgur.com/VtxDOQt.png)![Code](https://i.imgur.com/qQcEpvm.png)
+
 
 
 
@@ -33,6 +36,8 @@ Gestures
 - up
 ```
 
+
+
 ## Hardware
 
 ![Speech](https://i.imgur.com/7HF0B8S.png)
@@ -46,12 +51,26 @@ keyboard shortcuts; and to operate the mouse cursor.
 ```
 
 
+
+#### Speech Recognition
+| Pro's   |  Con's   |
+| --- | --- |
+| Don’t have to use a keyboard to input | The software has to be trained to recognize the user’s voice. This is accomplished by reading passages provided by the program  |
+| Software learns to recognize a speech patterns |  The user has to speak distinctly in order for the software to work well, unlike using a space bar for example, which is a more fluid gesture  | 
+| Some can type as quickly as they speak, 100+ words per minute |  While we may able to talk fast, what they produce will probably be disorganized, delayed or even incorrect  | 
+| Growing market  |  Uses a lot of memory  | 
+
+
+
+
 ## Conclusions & Recommendations
 ***Conclusions***
 Throughout the course of this project I learnt a lot, I should have researched more about what resources were available for the potential hardware I was going to use and I spent a reasonable amount of time trying to get speech recognition working due to the lack of resources available online. Speech recognition is a good hardware and the fact that it is an ever-growing market means that it is unlimited when developing with it. 
 
 ***Recommendations***
 My recommendations would be that during the research process, the main focus shouldn't just be on what the hardware can do; part of the research process should also look into what resource are available.
+
+
 
 
 ## References
@@ -70,6 +89,9 @@ My recommendations would be that during the research process, the main focus sho
 
 [7] https://p5js.org/get-started/
 
+[8] https://github.com/processing/p5.js
+
+[9]:https://editor.p5js.org/shane906.sm/sketches/_hUiJtn2V
 
 
 ## Video and How to Run
