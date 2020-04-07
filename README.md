@@ -19,7 +19,7 @@ https://github.com/smoran98/ChromeDinosaur
 ## Purpose of the application
 The design of the application came from an often-overlooked Easter Egg in Google Chrome is the dinosaur game, which appears when you try to visit a website while disconnected from the Internet. The game can be play online at https://elgoog.im/t-rex/ . But, to celebrate its brilliant simplicity, i am going to add speech recognition to control the player.
 
-## Architecture [9]
+## Architecture [p5.js]
 ![Preview](https://i.imgur.com/VtxDOQt.png)![Code](https://i.imgur.com/qQcEpvm.png)
 
 
@@ -91,7 +91,7 @@ My recommendations would be that during the research process, the main focus sho
 
 [8] https://github.com/processing/p5.js
 
-[9]:https://editor.p5js.org/shane906.sm/sketches/_hUiJtn2V
+[p5.js]:https://editor.p5js.org/shane906.sm/sketches/_hUiJtn2V
 
 
 ## Video and How to Run
