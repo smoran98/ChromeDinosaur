@@ -2,6 +2,20 @@
 ### Gesture Based URI Development Project 2020
 https://github.com/smoran98/ChromeDinosaur
 
+This is a project for GMIT's Gesture Based URI Module. This is an endless runner built via the p5JS web editor using ***Speech Recognition***. The aim of the game is to jump over the incoming AI trains by saying the word 'up' and doing so at the right times. In this project I have included a video of a demonstration on how it works.
+
+
+Firstly, to get this current project on your local machine first clone or download this project as a zip.
+```
+git clone https://https://github.com/smoran98/ChromeDinosaur
+cd ChromeDinosaur
+```
+To run the game online ...
+
+```
+https://editor.p5js.org/shane906.sm/sketches/_hUiJtn2V
+```
+
 
 ## Details
 
@@ -92,6 +106,12 @@ My recommendations would be that during the research process, the main focus sho
 [8] https://github.com/processing/p5.js
 
 [p5.js]:https://editor.p5js.org/shane906.sm/sketches/_hUiJtn2V
+
+
+## Authors
+
+* **Shane Moran - G00338607** - [GitHub](https://github.com/smoran98)
+
 
 
 ## Video and How to Run
