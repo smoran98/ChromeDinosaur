@@ -5,6 +5,9 @@ let bImg;
 let trains = [];
 let soundClassifier;
 
+var mode;
+
+
 function preload() {
   const options = {
     probabilityThreshold: 0.95
@@ -20,7 +23,10 @@ function mousePressed() {
 }
 
 function setup() {
+  mode = 0;
+  
   createCanvas(800, 450);
+  textSize(21);
   unicorn = new Unicorn();
   soundClassifier.classify(gotCommand);
 }
@@ -42,10 +48,14 @@ function keyPressed() {
 }
 
 function draw() {
-  
-  if (random(1) < 0.005) {
-    trains.push(new Train());
+  clear();
+  if (mode==0) {
+    text('ENTER to restart',20,40);
   }
+  
+   if (random(1) < 0.005) {
+     trains.push(new Train());
+   }
   
   background(bImg);
   for (let t of trains) {
@@ -59,4 +69,11 @@ function draw() {
 
   unicorn.show();
   unicorn.move();
+  
+}
+
+function keyPressed() {
+  if (keyCode===ENTER) {
+    mode = 0;
+  }
 }
